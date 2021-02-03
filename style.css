@@ -1,0 +1,14 @@
+.container{
+    height: 950px;
+    width: 950px;
+    text-align: center;
+}
+
+.style{
+    height: 150px;
+    width: 150px;
+    color:grey;
+    padding:26px;
+    margin: 13px;
+    border :solid 1px pink;
+}
