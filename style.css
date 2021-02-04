@@ -1,7 +1,13 @@
 .container{
-    height: 950px;
     width: 950px;
     text-align: center;
+    /* background: red; */
+    height: 100px;
+    margin: 0 auto;
+}
+
+img {
+    margin-right: 5px;
 }
 
 .style{

@@ -1,21 +1,27 @@
 window.onload = function(){
     
-    var mysteryCard = [];
-    for(var i=0; i<52; i++){
-
-    var li = document.createElement('a');
-    li.href = "https://via.placeholder.com";
     
-    var card = document.createElement('img');
-    card.src = "https://via.placeholder.com/150.png?Text=Mistery+Card";
-    li.appendChild(card)
-    card.setAttribute('class','style');
+    var container = document.createElement('div');
+    container.setAttribute('class', 'container');
+    
+    for(var i=0; i<52; i++){
+    
+        var card = document.createElement('img');
 
-    var containerCard = document.getElementById('container')
-    mysteryCard.push(i);
-    console.log(mysteryCard);
-    alert
+        /**
+         * @ToDo
+         * Générer la couleur aléatoirement 
+         */
+        card.src = "https://via.placeholder.com/150.png?Text=Mistery+Card";
+
+        container.appendChild(card);
+
+        card.addEventListener('click', function(e){
+            console.log(e);
+        }, false)
     }
+
+    document.body.appendChild(container);
 }
 
     /*var idCardQuerySelector = document.querySelector("#card");
